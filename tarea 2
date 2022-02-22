@@ -1,0 +1,71 @@
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+using namespace std;
+int main()
+
+{
+         int eleccion;
+        int a, b, suma,resta,mult,div;
+        float divR;
+        printf(" ingrese  uno de los casos: caso 1 suma: \n ");
+        printf("ingrese  uno de los casos: caso 2 resta: \n");
+        printf(" ingrese  uno de los casos: caso 3 multiplicacion: \n");
+        printf(" ingrese  uno de los casos: caso 4 divicion:  \n");
+       
+        scanf("%d", &eleccion);
+        switch(eleccion){
+        case 1:{ //suma
+                printf("Usted ha ingresdo en el modulo de suma \n");
+                printf("ingrese el valor de a: \n"); 
+        scanf("%d", &a);
+                printf("ingrese el valor de b: \n"); 
+        scanf("%d", &b);
+                suma=a+b;
+                printf("la suma es: %d \n", suma);
+                break;
+        }
+        case 2: { //resta
+                printf("Usted ha ingresado en el modulo de la resta: \n");
+                printf("ingrese el valor de a: ");
+        scanf("%d", &a);
+                printf("ingrese el valor de b: "); 
+        scanf("%d", &b);
+                resta=a-b;
+                printf("la resta es: %d \n", resta);
+               
+                break;
+        }
+        case 3:{ //multiplicacion
+                printf("Usted ha ingresado en el modulo de la multiplicacion \n");
+                printf("ingrese el valor de a: "); 
+                scanf("%d", &a);
+                printf("ingrese el valor de b: "); 
+                scanf("%d", &b);
+                mult=a*b;
+                printf("la multiplicacion es: %d \n", mult);
+               
+               
+                break;
+        }
+        case 4:{        //division
+                printf("Usted ha ingresado en el modulo de la divicion\n");
+                printf("ingrese el valor de a: "); 
+                scanf("%d", &a);
+                printf("ingrese el valor de b: "); 
+                scanf("%d", &b);
+                div=a/b;
+                printf("la division entera es: %d\n", div);
+                 divR=float(a)/float(b);
+               
+                printf("\n La division decimal es: %.2f",divR);
+
+
+
+                break;
+        }
+        default: printf("La opcion es invalida \n");
+        }
+       
+        return 0;
+}
